@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: white;
+  }
+  
+  ::selection {
+    color: red;
+    background: white;
+  }
+
+body {
+    background: linear-gradient(to bottom, rgb(25, 25, 25), rgb(50, 50, 50));
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+
+}
+
+ 
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 3rem;
+    padding: 2rem 0rem;
+}
+
+body::before {
+    content: "Adventure";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 600;
+    font-size: 12rem;
+    z-index: -10000000;
+    color: rgb(45, 45, 45);
+}
+
+nav .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu ul li {
+    list-style: none;
+    margin: 0rem 0.5rem;
+}
+nav .menu ul li a:hover{
+    color: red;
+}
+
+
+nav .menu ul li a {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+nav img {
+    height: 50px;
+}
+
+.frontText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.frontText div {
+    font-size: 2.9rem;
+    font-weight: 300;
+}
+
+.frontText div span {
+    font-weight: 500;
+}
+
+.frontText a {
+    text-decoration: none;
+    background-color: red;
+    padding: 0.9rem 1.4rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+}
+.frontText a:hover {
+
+    letter-spacing: 3px;
+    border-radius: 0px;
+}
+
+.slidingText {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 3rem;
+
+}
+
+.slidingText img {
+    height: 22rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-22%)  translateX(-50%);
+    left: 50%;
+    z-index: -1;
+
+}
+
+.up {
+    font-style: italic;
+    color: red;
+}
+
+.down {
+    font-size: 3rem;
+    font-weight: 550;
+}
+.social{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.social ion-icon{
+    
+    transition: 0.15s ease-in-out;
+}
+.social:hover ion-icon{
+    color:red;
+}
+.socialicons{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    margin: 0rem 3rem;
+    
+}
+.dots{
+    display: flex;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    margin: 0rem 3rem;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 50%;
+    margin-left: 0.3rem;
+    cursor: pointer;
+
+}
+.dot.active{
+    background-color: rgb(167, 167, 167);
+}
